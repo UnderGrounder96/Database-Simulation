@@ -8,6 +8,8 @@ This Python program was created under Ubuntu 16.04.3 LTS Operative System, MySQL
 
 Prerequisites
 ---------------
+**This program uses some MySQL server configuration both in test.py and ~/Module/config.py, please change those before trying to use.
+
 In order to use the Python program it is highly necessary to have an *internet connection* and install:
 	- Pip v8.1+
 	- MySQLdb v1.2+
