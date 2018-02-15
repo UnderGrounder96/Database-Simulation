@@ -14,7 +14,7 @@ In order to use the Python program it is highly necessary to have an *internet c
 	- Python v2.7.10+
 	- MySQL v5.7.20+
 
-i) Installing Python v2.7.10+
+i) Installing Python2
 	It is possible that Python has been already installed, to check use the following code in the command line:
 	
 	$ python --version
