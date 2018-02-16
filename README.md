@@ -8,7 +8,7 @@ This Python program was created under Ubuntu 16.04.3 LTS Operative System, MySQL
 
 Prerequisites
 ---------------
-**This program uses some MySQL server configuration both in test.py and ~/Module/config.py, please change those before trying to use.
+**After installation it is very important to fully test the program using the test.py, before first use.
 
 In order to use the Python program it is highly necessary to have an *internet connection* and install:
 	- Pip v8.1+
@@ -16,7 +16,7 @@ In order to use the Python program it is highly necessary to have an *internet c
 	- Python v2.7.10+
 	- MySQL v5.7.20+
 
-i) Installing Python2
+i) Installing Python v2.7.10+
 	It is possible that Python has been already installed, to check use the following code in the command line:
 	
 	$ python --version
@@ -76,7 +76,9 @@ iv) Testing
 	It is possible to pre-test the entire Python program by using the following code in the command line:
 
 	~/Project$ python test.py
+	[This programs assumes that the database is connected via localhost]
 	[Database version : 5.7.21-0ubuntu0.16.04.1]
+	[Congratulations! The connection was established.]
 
 	If the output is not similar to the one above, please check the previous installation instructions. 
 	In a later section of this readme should be official links for Python, MySQL, Pip and MySQLdb.
