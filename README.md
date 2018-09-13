@@ -1,4 +1,4 @@
-Database Simulation
+https://github.com/UnderGrounder96/Database-SimulationDatabase Simulation
 -------------------------
 This Python program simulates a MySQL database server. By connecting with the localhost by using a root user, his password and a pre-selected database.
 
@@ -91,11 +91,11 @@ Deployment
 The program was created to be easy to use and it is fool proof (to a dreggre). All user inputs return success or error messages.
 In order to use please run Python file below and follow the instructions.
 
-	~/Project$ python main.py
+	~/Database-Simulation$ python main.py
 
 Files
 ------
-/Project:
+/Database-Simulation:
 	LICENSE.md - license
 	main.py - main program
 	README.md - this readme
@@ -103,7 +103,7 @@ Files
 	unused - additional non-used code
 	Module - folder with additional files
 
-/Project/Module:
+/Database-Simulation/Module:
 	altrCrtDrp.py - alters, creates and drop tables
 	classy.py - MyError user-defined class
 	config.py - MySQL server configuration
