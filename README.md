@@ -8,7 +8,7 @@ This Python program was created under Ubuntu 16.04.3 LTS Operative System, MySQL
 
 Prerequisites
 ---------------
-**After installation it is very important to fully test the program using the test.py, before first use.
+**After installing, it is very important to fully test the program using the test.py, before first use.
 
 In order to use the Python program it is highly necessary to have an *internet connection* and install:
 	- Pip v8.1+
@@ -29,6 +29,7 @@ i) Installing Python v2.7.10+
 	
 	# installs python
 	$ sudo apt install python
+	
 	
 ii) Installing MySQL v5.7.20+
 	In order to install MySQL server use the following code in the command line:
@@ -51,6 +52,7 @@ ii) Installing MySQL v5.7.20+
 	# after a successful database creation it is possible to exit the server
 	mysql> exit
 
+
 iii) Installing MySQLdb v1.2+
 	In order to install MySQLdb (a MySQL module) it is necessary to install the Pip package using the following code in the command line:
 	
@@ -72,6 +74,7 @@ iii) Installing MySQLdb v1.2+
 	# installs MySQLdb
 	$ sudo pip install MySQL-python
 	
+	
 iv) Testing
 	It is possible to pre-test the entire Python program by using the following code in the command line:
 
@@ -87,6 +90,7 @@ Deployment
 --------------
 The program was created to be easy to use and it is fool proof (to a dreggre). All user inputs return success or error messages.
 In order to use please run Python file below and follow the instructions.
+
 	~/Project$ python main.py
 
 Files
