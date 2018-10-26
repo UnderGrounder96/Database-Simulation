@@ -1,4 +1,4 @@
-https://github.com/UnderGrounder96/Database-SimulationDatabase Simulation
+Database-Simulation
 -------------------------
 This Python program simulates a MySQL database server. By connecting with the localhost by using a root user, his password and a pre-selected database.
 
