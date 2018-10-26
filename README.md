@@ -38,8 +38,11 @@ ii) Installing MySQL v5.7.20+
 	
 	$ sudo apt install mysql-server
 	
-	During the installation a username and password will be requested, it is highly recommended to remember both since it is NOT possible to manage the server without them.
-	As soon as MySQL server is installed it is extremely important to create a database name, using the following code in the command line:
+	During the installation a username and password will be requested, 
+	it is highly recommended to remember both since it is NOT possible to manage the server without them.
+	
+	As soon as MySQL server is installed it is extremely important to create a database name, 
+	using the following code in the command line:
 	
 	# assuming the username is root
 	$ mysql -u root -p
@@ -54,7 +57,8 @@ ii) Installing MySQL v5.7.20+
 
 
 iii) Installing MySQLdb v1.2+
-	In order to install MySQLdb (a MySQL module) it is necessary to install the Pip package using the following code in the command line:
+	In order to install MySQLdb (a MySQL module) it is necessary to install the Pip package 
+	using the following code in the command line:
 	
 	$ sudo apt dist-upgrade
 	
@@ -66,7 +70,8 @@ iii) Installing MySQLdb v1.2+
 	# its possible to update pip using
 	$ sudo pip install pip --upgrade
 
-	After being installed it is possible to install MySQLdb itself by using the following code in the command line:
+	After being installed it is possible to install MySQLdb itself 
+	by using the following code in the command line:
 	
 	# some machines require to run the following code first
 	$ sudo apt build-dep python-mysqldb
@@ -83,8 +88,8 @@ iv) Testing
 	[Database version : 5.7.21-0ubuntu0.16.04.1]
 	[Congratulations! The connection was established.]
 
-	If the output is not similar to the one above, please check the previous installation instructions. 
-	In a later section of this readme should be official links for Python, MySQL, Pip and MySQLdb.
+	If the output is not similar to the one above, 
+	please check the previous installation instructions. 
 
 Deployment
 --------------
