@@ -128,11 +128,13 @@ This project is licensed under the GPL License - see the LICENSE.md file for det
 Acknowledgments
 ----------------------
 Official sites:
+
 	https://www.python.org/
 	https://www.mysql.com/
 	https://github.com/pypa/pip
 
 Tutorials:
+
 	https://www.w3schools.com/sql/
 	http://mysqlclient.readthedocs.io/
 	https://www.tutorialspoint.com/python/
