@@ -120,6 +120,7 @@ Files
 Versioning
 ------------
 Version 1.6 - Current version
+
 Version 2.0(TBA) - GUI support
 
 Author
