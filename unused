@@ -15,3 +15,10 @@ def static_vars(**kwargs):
 def function():
 	pass
 ##show.index += 1
+
+# To do:
+Test:
+ - Ask if it wants to create or use old database
+ 
+Main: 
+ - If no "file" database is found, recommend to use test
