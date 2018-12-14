@@ -66,11 +66,12 @@ iii) Installing MySQLdb v1.2+
 	$ python -m pip install --user MySQL-python
 
 iv) Testing
-	# database: app; table: users
-	# sudo mysql -u root -p &lt db sql
 	Importing the default file to your MySQL server, It would be possible to pre-test the entire Python program by
 	using the following code in the command line:
-
+	
+	# database: app; table: users
+	# sudo mysql -u root -p &lt db sql
+	
 	~/Project$ python test.py
 	[This programs assumes that the database is connected via localhost]
 	[Database version : 5.7.21-0ubuntu0.16.04.1]
