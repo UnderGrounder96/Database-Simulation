@@ -36,7 +36,8 @@ ii) Installing MySQL v5.7.20+
 	$ mysql --version
 	[mysql  Ver 14.14 Distrib 5.7.24]
 
-	To ensure a secure (and easiest possible) install, please refer to this website *last visited - 14/Dec/2018*:
+	To ensure a secure (and easiest possible) install,
+	please refer to this website *last visited - 14/Dec/2018*:
 
 	https://support.rackspace.com/how-to/installing-mysql-server-on-ubuntu/
 
