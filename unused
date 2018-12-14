@@ -9,16 +9,10 @@ def static_vars(**kwargs):
 
     foo.counter += 1
     print "Counter is %d" % foo.counter
-	
-    
-##@static_vars(index=0)	
+
+@static_vars(index=0)
 def function():
 	pass
-##show.index += 1
+    show.index += 1
 
-# To do:
-Test:
- - Ask if it wants to create or use old database
- 
-Main: 
- - If no "file" database is found, recommend to use test
+# sudo mysql -u root -p < db sql

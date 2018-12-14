@@ -1,6 +1,6 @@
 #!/usr/bin/python
 
-#MyError class		
+#MyError class
 class MyError(Exception):
     def __init__(self, value):
         self.value = value

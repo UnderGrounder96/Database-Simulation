@@ -8,18 +8,18 @@ try:
 	os.chdir("Module/")
 
 	# Reads from file
-	fi = open(r"db.txt", "rb")	
+	fi = open(r"db.txt", "rb")
+	d = fi.readline()
 	u = fi.readline()
 	p = fi.readline()
-	d = fi.readline()
-	l = "localhost"	
 
 	# Closes read file
 	fi.close()
 
+	l = "localhost"
+	d = d.strip()
 	u = u.strip()
 	p = p.strip()
-	d = d.strip()		
 
 	# Opens database connection
 	db = MySQLdb.connect(l,u,p,d)
@@ -29,6 +29,4 @@ try:
 
 except MyError as e:
 	print e
-
-else:
-	pass
+	exit(2)
