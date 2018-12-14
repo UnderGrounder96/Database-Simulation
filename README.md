@@ -45,8 +45,6 @@ iii) Installing MySQLdb v1.2+
 	In order to install MySQLdb (a MySQL module) it is necessary to install the Pip package
 	using the following code in the command line:
 
-	$ sudo apt dist-upgrade
-
 	$ sudo apt install python-pip
 
 	# or its variant
@@ -70,7 +68,7 @@ iv) Testing
 	using the following code in the command line:
 	
 	# database: app; table: users
-	# sudo mysql -u root -p &lt db sql
+	# sudo mysql -u root -p < db sql
 	
 	~/Project$ python test.py
 	[This programs assumes that the database is connected via localhost]
