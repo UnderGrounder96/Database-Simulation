@@ -8,13 +8,10 @@ try:
 	os.chdir("Module/")
 
 	# Reads from file
-	fi = open(r"db.txt", "rb")
-	d = fi.readline()
-	u = fi.readline()
-	p = fi.readline()
-
-	# Closes read file
-	fi.close()
+	with open(r"db.txt", "rb") as file:
+	    d = file.readline()
+	    u = file.readline()
+	    p = file.readline()
 
 	l = "localhost"
 	d = d.strip()
@@ -29,4 +26,6 @@ try:
 
 except MyError as e:
 	print e
+
 	exit(2)
+

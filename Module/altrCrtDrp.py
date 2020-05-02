@@ -4,17 +4,20 @@ from config import *
 
 def altrCrtDrp():
 	try:
-		sql = raw_input("Please enter the entire SQL ALT/CRT/DRP TABLE command: ")
-		string = sql+";"
+		sql_query = raw_input("Please enter the entire SQL ALT/CRT/DRP TABLE \
+command: ")
+		string = sql_query + ";"
 
 		# Executes the SQL command against the database
 		cursor.execute(string)
 
-	except MySQLdb.Error, e:
+	except MySQLdb.Error as e:
 		try:
-			print "MySQL Error [%d]: %s\n" % (e.args[0], e.args[1])
+			print "MySQL Error [{}]: {}".format(e.args[0], e.args[1])
+
 		except IndexError:
-			print "MySQL Error: %s\n" % str(e)
+			print "MySQL Error: {}".format(str(e))
 
 	else:
 		print "The table was ALT/CRT/DRP successfully.\n"
+

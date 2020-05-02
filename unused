@@ -3,7 +3,9 @@ def static_vars(**kwargs):
     def decorate(func):
         for k in kwargs:
             setattr(func, k, kwargs[k])
+
         return func
+
     return decorate
 
 
@@ -15,4 +17,3 @@ def function():
 	pass
     show.index += 1
 
-# sudo mysql -u root -p < db sql

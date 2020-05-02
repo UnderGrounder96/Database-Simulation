@@ -8,6 +8,7 @@ This Python program was created under Ubuntu 16.04.3 LTS Operative System, MySQL
 
 Prerequisites
 ---------------
+*MySQL in some machines may require sudo, this is the main reason why program may require it.
 **After installing, it is very important to fully test the program using the test.py, before first use.
 
 In order to use the Python program it is highly necessary to have an *internet connection* and install:
@@ -22,7 +23,7 @@ i) Installing Python v2.7.10+
 	$ python --version
 	[Python 2.7.12]
 
-	If errors occured or Python has not yet been installed use the following code:
+	If errors occurred or Python has not yet been installed use the following code:
 
 	$ sudo apt dist-upgrade
 	# refreshes the repositories
@@ -33,11 +34,11 @@ i) Installing Python v2.7.10+
 ii) Installing MySQL v5.7.20+
 	It is possible that Python has been already installed, to check use the following code in the command line:
 
-	$ mysql --version
+	$ sudo mysql --version
 	[mysql  Ver 14.14 Distrib 5.7.24]
 
 	To ensure a secure (and easiest possible) install,
-	please refer to this website *last visited - 14/Dec/2018*:
+	please refer to this website *last visited - 02/May/2020*:
 
 	https://support.rackspace.com/how-to/installing-mysql-server-on-ubuntu/
 
@@ -53,7 +54,7 @@ iii) Installing MySQLdb v1.2+
 	# its possible to update pip using
 	$ sudo pip install pip --upgrade
 
-	After being installed it is possible to install MySQLdb itself
+	After installing pip it is possible to install MySQLdb itself
 	by using the following code in the command line:
 
 	# some machines require to run the following code first
@@ -66,11 +67,11 @@ iii) Installing MySQLdb v1.2+
 iv) Testing
 	Importing the default file to your MySQL server, It would be possible to pre-test the entire Python program by
 	using the following code in the command line:
-	
+
 	# database: app; table: users
-	# sudo mysql -u root -p < db sql
-	
-	~/Project$ python test.py
+	# sudo mysql -u root -p < db.sql
+
+	~/Database-Simulation$ sudo python test.py
 	[This programs assumes that the database is connected via localhost]
 	[Database version : 5.7.21-0ubuntu0.16.04.1]
 	[Congratulations! The connection was established.]
@@ -80,10 +81,10 @@ iv) Testing
 
 Deployment
 --------------
-The program was created to be easy to use and it is fool proof (to a dreggre). All user inputs return success or error messages.
+The program was created to be easy to use and it is fool proof (to a degree). All user inputs return success or error messages.
 In order to use please run Python file below and follow the instructions.
 
-	~/Database-Simulation$ python main.py
+	~/Database-Simulation$ sudo python main.py
 
 Files
 ------
@@ -103,10 +104,11 @@ Files
 	delInsUpd.py - deletes from, inserts (into) and updates tables
 	__int__.py - redirects package
 	select.py - reads from tables
+	db.txt - read-only, created after running test.py *
 
 Versioning
 ------------
-Version 1.8 - Current version
+Version 1.9 - Current version
 
 Version 2.0(TBA) - GUI support
 
