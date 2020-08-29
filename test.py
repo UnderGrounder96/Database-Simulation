@@ -1,6 +1,7 @@
 #!/usr/bin/python
 #Lucio Afonso
 
+import sys
 import getpass
 import argparse
 import MySQLdb
@@ -12,14 +13,14 @@ the pre-test.")
 
 	parser.parse_args()
 
-	print "This programs assumes that the database is connected via localhost\n"
+	print("This programs assumes that the database is connected via localhost\n")
 
-	d = raw_input("Please insert the database name: ")
-	u = raw_input("Please insert the database username: ")
+	d = input("Please insert the database name: ")
+	u = input("Please insert the database username: ")
 	p = getpass.getpass(prompt="Please insert the database password: ")
 
 	# Creates a file
-	with open(r"Module/db.txt", "wb") as file:
+	with open(r"Module/db.txt", "w") as file:
 		file.write(r""+d+"\n");
 		file.write(r""+u+"\n");
 		file.write(r""+p);
@@ -36,23 +37,23 @@ the pre-test.")
 	# Fetchs a single row using fetchone() method.
 	data = cursor.fetchone()
 
-	print '\n'
-	print "Database version : {} ".format(data)
+	print()
+	print("Database version : {} ".format(data))
 
 except MySQLdb.Error as e:
-	print '\n'
+	print()
 
-	print "It wasn\'t possible to connect with the database. \
+	print("It wasn\'t possible to connect with the database. \
 Please verify if the correct username, password and database name were used.\n \
-Full MySQL error: "
+Full MySQL error: ")
 
-	print e
+	print(e)
 
-	exit(1)
+	sys.exit(1)
 
 else:
-	print "\nCongratulations! The connection was established.\nYou're now able \
-to run \'python main.py\'."
+	print("\nCongratulations! The connection was established.\nYou're now able \
+to run \'python3 main.py\'.")
 
 	# Closes all cursors
 	cursor.close()
@@ -60,5 +61,4 @@ to run \'python main.py\'."
 	# Disconnects from server
 	db.close()
 
-	exit(0)
-
+	sys.exit(0)
