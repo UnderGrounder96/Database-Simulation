@@ -1,136 +1,132 @@
-Database-Simulation
--------------------------
-This Python program simulates a MySQL database server. By connecting with the localhost and using a root user, his password and a pre-selected database.
+## Database-Simulation
 
-Getting Started
-------------------
-This Python program was created under Ubuntu 16.04.3 LTS Operative System, MySQL 5.7.21, Python 2.7.12, Pip 8.1.1 and MySQLdb 1.2.5.
+This Python program simulates a MySQL database server.
 
-Prerequisites
----------------
-*MySQL in some machines may require sudo, this is the main reason why program may require it.
-**After installing, it is very important to fully test the program using the test.py, before first use.
+## Getting Started
 
-In order to use the Python program it is highly necessary to have an *internet connection* and install:
-	- Pip v8.1+
-	- MySQLdb v1.2+
-	- Python v2.7.10+
-	- MySQL v5.7.20+
+This Python program was created under Ubuntu 16.04.3 LTS Operative System,<br />
+MySQL 5.7.21, Python 3.8.2, Pip 8.1.1 and MySQLdb 1.2.5.
 
-i) Installing Python v2.7.10+
-	It is possible that Python has been already installed, to check use the following code in the command line:
+## Prerequisites
 
-	$ python --version
-	[Python 2.7.12]
+\*MySQL in some machines may require sudo.<br />
+\*\*After installing, it is very important to run the **test.py**, before first use.
 
-	If errors occurred or Python has not yet been installed use the following code:
+i) Installing Python v3.8.2+
+It is possible that Python has been already installed, one could check by using the commands:
 
-	$ sudo apt dist-upgrade
-	# refreshes the repositories
+    $ python3 --version
+    [Python 3.8.2]
 
-	$ sudo apt install python
-	# installs python
+    If errors occurred or Python has not yet been installed use the following code:
+
+    $ sudo apt dist-upgrade
+    # refreshes the repositories
+
+    $ sudo apt install python3
+    # installs python3
 
 ii) Installing MySQL v5.7.20+
-	It is possible that Python has been already installed, to check use the following code in the command line:
+It is possible that MySQL has been already installed, one could check by using the commands:
 
-	$ sudo mysql --version
-	[mysql  Ver 14.14 Distrib 5.7.24]
+    $ sudo mysql --version
+    [mysql  Ver 14.14 Distrib 5.7.24]
 
-	To ensure a secure (and easiest possible) install,
-	please refer to this website *last visited - 02/May/2020*:
+    To ensure a secure (and easiest possible) install,
+    please refer to this website *last visited - 02/May/2020*:
 
-	https://support.rackspace.com/how-to/installing-mysql-server-on-ubuntu/
+    https://support.rackspace.com/how-to/installing-mysql-server-on-ubuntu/
 
 iii) Installing MySQLdb v1.2+
-	In order to install MySQLdb (a MySQL module) it is necessary to install the Pip package
-	using the following code in the command line:
+In order to install MySQLdb (a MySQL module) and PIP, one could check by using the commands:
 
-	$ sudo apt install python-pip
+    $ python3 -m pip --version
+    [pip 20.2.2 from ... (python 3.8)]
 
-	# or its variant
-	$ sudo easy_install pip
+    # or its variant
+    $ curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+    $ python3 get-pip.py
 
-	# its possible to update pip using
-	$ sudo pip install pip --upgrade
+    # its possible to update pip using
+    $ python3 -m pip install -U pip
 
-	After installing pip it is possible to install MySQLdb itself
-	by using the following code in the command line:
+    After installing pip it is possible to install MySQLdb itself
+    by using the following commands:
 
-	# some machines require to run the following code first
-	$ sudo apt build-dep python-mysqldb
+    # some machines require to run the following code first
+    $ sudo apt build-dep python-mysqldb
 
-	# installs MySQLdb
-	$ sudo apt-get install python-dev libmysqlclient-dev
-	$ python -m pip install --user MySQL-python
+    # installs MySQLdb
+    $ sudo apt install python3-dev libmysqlclient-dev
+    $ pip install -r requirements.txt
 
 iv) Testing
-	Importing the default file to your MySQL server, It would be possible to pre-test the entire Python program by
-	using the following code in the command line:
+Importing the default file to your MySQL server, It would be possible to pre-test the entire Python program by
+using the following code in the command line:
 
-	# database: app; table: users
-	# sudo mysql -u root -p < db.sql
+    # database: app; table: users
+    # sudo mysql -u root -p < db.sql
 
-	~/Database-Simulation$ sudo python test.py
-	[This programs assumes that the database is connected via localhost]
-	[Database version : 5.7.21-0ubuntu0.16.04.1]
-	[Congratulations! The connection was established.]
+    ~/Database-Simulation$ sudo python test.py
+    [This programs assumes that the database is connected via localhost]
+    [Database version : 5.7.21-0ubuntu0.16.04.1]
+    [Congratulations! The connection was established.]
 
-	If the output is not similar to the one above,
-	please check the previous installation instructions.
+    If the output is not similar to the one above,
+    please check the previous installation instructions.
 
-Deployment
---------------
-The program was created to be easy to use and it is fool proof (to a degree). All user inputs return success or error messages.
+## Deployment
+
+The program was created to be easy to use and it is fool proof (to a degree).<br />
+All user inputs return success or error messages.<br />
 In order to use please run Python file below and follow the instructions.
 
-	~/Database-Simulation$ sudo python main.py
+    ~/Database-Simulation$ sudo python main.py
 
-Files
-------
-/Database-Simulation:
-	LICENSE.md - license
-	main.py - main program
-	README.md - this readme
-	test.py - tester
-	unused - additional non-used code
-	Module - folder with additional files
-	db.sql - dummy SQL database
+## Files
 
-/Database-Simulation/Module:
-	altrCrtDrp.py - alters, creates and drop tables
-	classy.py - MyError user-defined class
-	config.py - MySQL server configuration
-	delInsUpd.py - deletes from, inserts (into) and updates tables
-	__int__.py - redirects package
-	select.py - reads from tables
-	db.txt - read-only, created after running test.py *
+/Database-Simulation:<br />
+LICENSE.md - license<br />
+main.py - main program<br />
+README.md - this readme<br />
+test.py - tester<br />
+unused - additional non-used code<br />
+Module - folder with additional files<br />
+db.sql - dummy SQL database<br />
 
-Versioning
-------------
-Version 1.9 - Current version
+/Database-Simulation/Module:<br />
+altrCrtDrp.py - alters, creates and drop tables<br />
+classy.py - MyError user-defined class<br />
+config.py - MySQL server configuration<br />
+delInsUpd.py - deletes from, inserts (into) and updates tables<br />
+**int**.py - redirects package<br />
+select.py - reads from tables<br />
+db.txt - read-only, created after running test.py \*<br />
 
+## Versioning
+
+Version 1.9 - Current version<br />
 Version 2.0(TBA) - GUI support
 
-Author
----------
+## Author
+
 Lucio Afonso
 
-License
----------
+## License
+
 This project is licensed under the GPL License - see the LICENSE.md file for details
 
-Acknowledgments
-----------------------
+## Acknowledgments
+
 Official sites:
 
-	https://www.python.org/
-	https://www.mysql.com/
-	https://github.com/pypa/pip
+https://www.python.org/<br />
+https://www.mysql.com/<br />
+https://github.com/pypa/pip<br />
 
 Tutorials:
 
-	https://www.w3schools.com/sql/
-	http://mysqlclient.readthedocs.io/
-	https://www.tutorialspoint.com/python/
-	http://www.mikusa.com/python-mysql-docs/index.html
+https://www.w3schools.com/sql/<br />
+http://mysqlclient.readthedocs.io/<br />
+https://www.tutorialspoint.com/python/<br />
+http://www.mikusa.com/python-mysql-docs/index.html<br />

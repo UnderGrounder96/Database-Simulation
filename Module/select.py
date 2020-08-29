@@ -1,10 +1,11 @@
 #!/usr/bin/python
 
-from config import *
+from .config import *
 
 def select():
 	try:
-		sql_query = raw_input("Please enter the entire SQL SELECT command: ")
+		sql_query = input("Please enter the entire SQL SELECT command: ")
+
 		string = sql_query + ";"
 
 		# Executes the SQL command against the database
@@ -17,13 +18,12 @@ def select():
 
 		for row in results:
 			for col in row:
-				print "%s," % col
+				print("%s," % col)
 
-			print "\n"
+			print()
 
 	except:
-		print "Error: unable to fetch data, please verify the input.\n"
+		print("Error: unable to fetch data, please verify the input.\n")
 
 	else:
-		print "The data was SELECTED successfully.\n"
-
+		print("The data was SELECTED successfully.\n")
